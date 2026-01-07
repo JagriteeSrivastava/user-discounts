@@ -2,7 +2,7 @@
 
 This project implements **Task B: Laravel Package for User Discounts**. It features a reusable, PSR-4 compliant package with deterministic stacking and a full automated test suite.
 
-## 🚀 Package: `acme/user-discounts`
+## 🚀 Package: `smart-discounts/user-discounts`
 
 ### 1. Key Functionality
 - **Assign & Revoke**: Idempotent methods to grant or remove discounts for specific users.
@@ -23,7 +23,7 @@ This project implements **Task B: Laravel Package for User Discounts**. It featu
 ## 🛠️ Usage Example
 
 ```php
-use Acme\UserDiscounts\Models\Discount;
+use smart-discounts\UserDiscounts\Models\Discount;
 
 // 1. Assign to user
 $user->assignDiscount('WELCOME10');
@@ -53,12 +53,12 @@ Just like Task A, this repository is configured with GitHub Actions to automatic
 ---
 
 ## 📦 Installation (Internal)
-The package is located in `packages/acme/user-discounts` and is linked via the main `composer.json` using a path repository.
+The package is located in `packages/smart-discounts/user-discounts` and is linked via the main `composer.json` using a path repository.
 ```json
 "repositories": [
     {
         "type": "path",
-        "url": "packages/acme/user-discounts"
+        "url": "packages/smart-discounts/user-discounts"
     }
 ]
 ```
