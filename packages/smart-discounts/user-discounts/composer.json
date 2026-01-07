@@ -1,0 +1,19 @@
+{
+    "name": "smart-discounts/user-discounts",
+    "description": "A reusable Laravel package for user-level discounts.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SmartDiscounts\\UserDiscounts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmartDiscounts\\UserDiscounts\\DiscountServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
